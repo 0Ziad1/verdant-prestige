@@ -1,0 +1,124 @@
+export interface Product {
+  id: string;
+  name: string;
+  description: string;
+  fullDescription: string;
+  category: string;
+  imageUrl: string;
+  featured?: boolean;
+  features: string[];
+  specifications: { label: string; value: string }[];
+}
+
+export const products: Product[] = [
+  {
+    id: 'heritage-collection',
+    name: 'The Heritage Collection',
+    description: 'Our flagship line of premium products, crafted with generations of expertise and the finest materials available.',
+    fullDescription: 'The Heritage Collection represents the pinnacle of our craftsmanship. Each piece is meticulously handcrafted by master artisans who have dedicated their lives to perfecting their craft. Using only the finest materials sourced from around the world, this collection embodies luxury, durability, and timeless elegance.',
+    category: 'Signature',
+    imageUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80',
+    featured: true,
+    features: [
+      'Handcrafted by master artisans',
+      'Premium materials sourced globally',
+      'Lifetime warranty included',
+      'Exclusive packaging and presentation',
+      'Certificate of authenticity',
+    ],
+    specifications: [
+      { label: 'Origin', value: 'Handmade in Italy' },
+      { label: 'Materials', value: 'Premium Grade A' },
+      { label: 'Warranty', value: 'Lifetime' },
+      { label: 'Availability', value: 'Coming Soon' },
+    ],
+  },
+  {
+    id: 'artisan-series',
+    name: 'Artisan Series',
+    description: 'Handcrafted excellence for the discerning customer who appreciates true craftsmanship.',
+    fullDescription: 'The Artisan Series celebrates the art of handcrafted excellence. Each piece in this limited edition collection is individually numbered and signed by the artisan who created it. The attention to detail and commitment to quality makes every item a unique work of art.',
+    category: 'Limited Edition',
+    imageUrl: 'https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80',
+    features: [
+      'Limited edition pieces',
+      'Individually numbered',
+      'Artisan signed',
+      'Unique handcrafted details',
+      'Collector\'s certificate',
+    ],
+    specifications: [
+      { label: 'Edition', value: 'Limited to 500 pieces' },
+      { label: 'Materials', value: 'Artisan Selected' },
+      { label: 'Warranty', value: '10 Years' },
+      { label: 'Availability', value: 'Coming Soon' },
+    ],
+  },
+  {
+    id: 'classic-essentials',
+    name: 'Classic Essentials',
+    description: 'Timeless designs that form the foundation of any refined collection.',
+    fullDescription: 'Classic Essentials represents the core of our philosophy: exceptional quality without compromise. These timeless pieces are designed to be the foundation of any refined collection, offering versatility, durability, and understated elegance that never goes out of style.',
+    category: 'Core Range',
+    imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80',
+    features: [
+      'Timeless design philosophy',
+      'Versatile applications',
+      'Premium quality materials',
+      'Easy maintenance',
+      'Exceptional durability',
+    ],
+    specifications: [
+      { label: 'Style', value: 'Classic Contemporary' },
+      { label: 'Materials', value: 'Premium Standard' },
+      { label: 'Warranty', value: '5 Years' },
+      { label: 'Availability', value: 'Coming Soon' },
+    ],
+  },
+  {
+    id: 'executive-line',
+    name: 'Executive Line',
+    description: 'Premium solutions designed for professionals who demand the very best.',
+    fullDescription: 'The Executive Line is designed for professionals who understand that quality is an investment. Each piece combines sophisticated aesthetics with practical functionality, creating tools and accessories that enhance productivity while making a powerful statement.',
+    category: 'Professional',
+    imageUrl: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
+    features: [
+      'Professional-grade quality',
+      'Sophisticated aesthetics',
+      'Enhanced functionality',
+      'Business-ready presentation',
+      'Premium customer support',
+    ],
+    specifications: [
+      { label: 'Grade', value: 'Executive Professional' },
+      { label: 'Materials', value: 'Business Premium' },
+      { label: 'Warranty', value: '7 Years' },
+      { label: 'Availability', value: 'Coming Soon' },
+    ],
+  },
+  {
+    id: 'the-reserve',
+    name: 'The Reserve',
+    description: 'Exclusive products available in limited quantities for our most valued patrons.',
+    fullDescription: 'The Reserve is our most exclusive offering, available only to our most valued patrons. These extraordinary pieces are produced in extremely limited quantities, ensuring their rarity and collectible value. Each item is a testament to the heights that can be achieved when there are no compromises.',
+    category: 'Exclusive',
+    imageUrl: 'https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?w=800&q=80',
+    features: [
+      'Extremely limited availability',
+      'Invitation-only access',
+      'Bespoke customization options',
+      'White-glove delivery service',
+      'Exclusive member benefits',
+    ],
+    specifications: [
+      { label: 'Availability', value: 'By Invitation Only' },
+      { label: 'Materials', value: 'Ultra Premium' },
+      { label: 'Warranty', value: 'Lifetime Plus' },
+      { label: 'Status', value: 'Coming Soon' },
+    ],
+  },
+];
+
+export const getProductById = (id: string): Product | undefined => {
+  return products.find(product => product.id === id);
+};
