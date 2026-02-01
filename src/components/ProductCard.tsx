@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 interface ProductCardProps {
+  id: string;
   name: string;
   description: string;
   category: string;
@@ -8,10 +10,11 @@ interface ProductCardProps {
   featured?: boolean;
 }
 
-const ProductCard = ({ name, description, category, imageUrl, featured }: ProductCardProps) => {
+const ProductCard = ({ id, name, description, category, imageUrl, featured }: ProductCardProps) => {
   return (
-    <div
-      className={`group relative rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-card ${
+    <Link
+      to={`/product/${id}`}
+      className={`group relative rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-card block ${
         featured ? 'md:col-span-2 md:row-span-2' : ''
       }`}
     >
@@ -40,14 +43,14 @@ const ProductCard = ({ name, description, category, imageUrl, featured }: Produc
           {description}
         </p>
         <div className="flex items-center gap-2 text-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
-          <span>Learn More</span>
+          <span>View Details</span>
           <ArrowRight className="w-4 h-4" />
         </div>
       </div>
 
       {/* Border glow on hover */}
-      <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-gold/30 transition-colors duration-500" />
-    </div>
+      <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-gold/30 transition-colors duration-500 pointer-events-none" />
+    </Link>
   );
 };
 
