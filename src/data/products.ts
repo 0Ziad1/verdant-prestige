@@ -117,6 +117,27 @@ export const products: Product[] = [
       { label: 'Status', value: 'Coming Soon' },
     ],
   },
+  {
+    id: 'prestige-collection',
+    name: 'Prestige Collection',
+    description: 'Where innovation meets tradition, creating products that define a new era of luxury.',
+    fullDescription: 'The Prestige Collection bridges the gap between time-honored craftsmanship and modern innovation. Each piece is designed to meet the exacting standards of today while honoring the traditions that have defined luxury for generations. This collection is for those who appreciate both heritage and progress.',
+    category: 'Innovation',
+    imageUrl: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=800&q=80',
+    features: [
+      'Cutting-edge design technology',
+      'Traditional craftsmanship methods',
+      'Sustainable materials',
+      'Smart integration capabilities',
+      'Future-proof design philosophy',
+    ],
+    specifications: [
+      { label: 'Design', value: 'Modern Heritage' },
+      { label: 'Materials', value: 'Eco-Premium' },
+      { label: 'Warranty', value: '10 Years' },
+      { label: 'Status', value: 'Coming Soon' },
+    ],
+  },
 ];
 
 export const getProductById = (id: string): Product | undefined => {
