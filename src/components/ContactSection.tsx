@@ -1,26 +1,24 @@
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const ContactSection = () => {
+  const { t } = useLanguage();
+
   const contactInfo = [
     {
       icon: MapPin,
-      title: 'Location',
-      details: ['123 Premium Avenue', 'Business District', 'New York, NY 10001'],
-    },
-    {
-      icon: Phone,
-      title: 'Phone',
-      details: ['+1 (555) 123-4567', '+1 (555) 987-6543'],
+      title: t.contact.info.location,
+      details: [t.contact.info.locationValue],
     },
     {
       icon: Mail,
-      title: 'Email',
-      details: ['info@company.com', 'support@company.com'],
+      title: t.contact.info.email,
+      details: ['info@luxeco.com', 'support@luxeco.com'],
     },
     {
       icon: Clock,
-      title: 'Business Hours',
-      details: ['Mon - Fri: 9AM - 6PM', 'Sat: 10AM - 4PM', 'Sun: Closed'],
+      title: t.contact.info.hours,
+      details: [t.contact.info.hoursValue],
     },
   ];
 
@@ -30,14 +28,13 @@ const ContactSection = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <span className="text-gold text-sm uppercase tracking-[0.3em] font-medium">
-            Get In Touch
+            {t.contact.badge}
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-semibold mt-4 mb-6">
-            Contact <span className="text-gradient-gold">Us</span>
+            {t.contact.title1} <span className="text-gradient-gold">{t.contact.title2}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg font-light">
-            Have questions? We'd love to hear from you. Reach out and our team 
-            will get back to you shortly.
+            {t.contact.description}
           </p>
         </div>
 
@@ -67,56 +64,44 @@ const ContactSection = () => {
           {/* Contact form */}
           <div className="p-8 rounded-2xl bg-card border border-border">
             <h3 className="font-heading text-2xl font-semibold mb-6 text-foreground">
-              Send us a Message
+              {t.contact.form.submit}
             </h3>
             <form className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm text-muted-foreground mb-2">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-gold focus:outline-none transition-colors text-foreground"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm text-muted-foreground mb-2">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-gold focus:outline-none transition-colors text-foreground"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
               <div>
                 <label className="block text-sm text-muted-foreground mb-2">
-                  Email Address
+                  {t.contact.form.name}
                 </label>
                 <input
-                  type="email"
+                  type="text"
                   className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-gold focus:outline-none transition-colors text-foreground"
-                  placeholder="john@example.com"
+                  placeholder={t.contact.form.namePlaceholder}
                 />
               </div>
               <div>
                 <label className="block text-sm text-muted-foreground mb-2">
-                  Message
+                  {t.contact.form.email}
+                </label>
+                <input
+                  type="email"
+                  className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-gold focus:outline-none transition-colors text-foreground"
+                  placeholder={t.contact.form.emailPlaceholder}
+                />
+              </div>
+              <div>
+                <label className="block text-sm text-muted-foreground mb-2">
+                  {t.contact.form.message}
                 </label>
                 <textarea
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-gold focus:outline-none transition-colors text-foreground resize-none"
-                  placeholder="Tell us how we can help..."
+                  placeholder={t.contact.form.messagePlaceholder}
                 />
               </div>
               <button
                 type="submit"
                 className="w-full py-4 gradient-gold text-primary-foreground font-medium rounded-lg shadow-gold transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_8px_40px_hsl(43_70%_47%_/_0.3)] gold-shimmer"
               >
-                Send Message
+                {t.contact.form.submit}
               </button>
             </form>
           </div>

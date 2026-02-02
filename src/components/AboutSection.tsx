@@ -1,21 +1,24 @@
 import { Award, Shield, Gem } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const AboutSection = () => {
+  const { t } = useLanguage();
+
   const features = [
     {
       icon: Award,
-      title: 'Premium Quality',
-      description: 'Every product is crafted with meticulous attention to detail, using only the finest materials.',
+      title: t.about.vision.title,
+      description: t.about.vision.description,
     },
     {
       icon: Shield,
-      title: 'Trusted Excellence',
-      description: 'Built on decades of industry expertise, delivering products you can rely on.',
+      title: t.about.mission.title,
+      description: t.about.mission.description,
     },
     {
       icon: Gem,
-      title: 'Timeless Design',
-      description: 'Elegant aesthetics that transcend trends, creating lasting value for our customers.',
+      title: t.about.promise.title,
+      description: t.about.promise.description,
     },
   ];
 
@@ -25,14 +28,13 @@ const AboutSection = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <span className="text-gold text-sm uppercase tracking-[0.3em] font-medium">
-            About Us
+            {t.about.badge}
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-semibold mt-4 mb-6">
-            Crafting <span className="text-gradient-gold">Tomorrow's</span> Legacy
+            {t.about.title1} <span className="text-gradient-gold">{t.about.title2}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg font-light">
-            We are a company built on the foundation of excellence. Our mission is to deliver 
-            products that exceed expectations and stand the test of time.
+            {t.about.description}
           </p>
         </div>
 
@@ -60,12 +62,12 @@ const AboutSection = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-16 border-t border-border">
           {[
-            { value: '25+', label: 'Years Experience' },
-            { value: '50K+', label: 'Happy Customers' },
-            { value: '100+', label: 'Premium Products' },
-            { value: '15', label: 'Countries Served' },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
+            { value: '25+', label: t.about.stats.experience },
+            { value: '50K+', label: t.about.stats.clients },
+            { value: '100+', label: t.about.stats.products },
+            { value: '15', label: t.about.stats.experience },
+          ].map((stat, index) => (
+            <div key={index} className="text-center">
               <div className="font-heading text-3xl md:text-4xl font-semibold text-gold mb-2">
                 {stat.value}
               </div>

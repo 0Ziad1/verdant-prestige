@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,9 +18,9 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { label: 'About', href: '#about' },
-    { label: 'Products', href: '#products' },
-    { label: 'Contact', href: '#contact' },
+    { label: t.nav.about, href: '#about' },
+    { label: t.nav.products, href: '#products' },
+    { label: t.nav.contact, href: '#contact' },
   ];
 
   return (
@@ -46,11 +49,12 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <LanguageSwitcher />
           <a
             href="#contact"
             className="px-5 py-2.5 gradient-gold text-primary-foreground text-sm font-medium rounded-lg transition-all duration-300 hover:scale-105 shadow-gold"
           >
-            Get Notified
+            {t.nav.getNotified}
           </a>
         </div>
 
@@ -77,12 +81,15 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
+            <div className="py-2">
+              <LanguageSwitcher />
+            </div>
             <a
               href="#contact"
               onClick={() => setIsMobileMenuOpen(false)}
               className="px-5 py-3 gradient-gold text-primary-foreground text-sm font-medium rounded-lg text-center mt-2"
             >
-              Get Notified
+              {t.nav.getNotified}
             </a>
           </div>
         </div>

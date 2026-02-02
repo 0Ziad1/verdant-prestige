@@ -1,7 +1,10 @@
 import CountdownTimer from './CountdownTimer';
 import { Sparkles } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
       {/* Decorative elements */}
@@ -20,21 +23,20 @@ const HeroSection = () => {
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 border border-gold/20 mb-8 animate-fade-in">
           <Sparkles className="w-4 h-4 text-gold" />
           <span className="text-sm text-muted-foreground tracking-wider uppercase">
-            Launching Soon
+            {t.hero.badge}
           </span>
         </div>
 
         {/* Main heading */}
         <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-semibold mb-6 animate-fade-in-up">
-          <span className="text-foreground">Excellence</span>
+          <span className="text-foreground">{t.hero.title1}</span>
           <br />
-          <span className="text-gradient-gold">Redefined</span>
+          <span className="text-gradient-gold">{t.hero.title2}</span>
         </h1>
 
         {/* Tagline */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 animate-fade-in-delay font-light tracking-wide">
-          A new standard in premium products is coming. Prepare to experience 
-          quality and elegance like never before.
+          {t.hero.tagline}
         </p>
 
         {/* Countdown */}
@@ -48,7 +50,7 @@ const HeroSection = () => {
             href="#contact"
             className="inline-flex items-center gap-2 px-8 py-4 gradient-gold text-primary-foreground font-medium rounded-lg shadow-gold transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_40px_hsl(43_70%_47%_/_0.3)] gold-shimmer"
           >
-            Get Notified
+            {t.hero.cta}
           </a>
         </div>
 
