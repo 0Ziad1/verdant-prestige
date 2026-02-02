@@ -1,6 +1,9 @@
 import { Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   const socialLinks = [
     { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Twitter, href: '#', label: 'Twitter' },
@@ -34,7 +37,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2025 LuxeCo. All rights reserved.
+            © 2025 LuxeCo. {t.footer.rights}
           </p>
         </div>
       </div>

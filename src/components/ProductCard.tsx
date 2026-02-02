@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 interface ProductCardProps {
   id: string;
@@ -11,6 +12,8 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ id, name, description, category, imageUrl, featured }: ProductCardProps) => {
+  const { t, isRTL } = useLanguage();
+
   return (
     <Link
       to={`/product/${id}`}
@@ -43,8 +46,8 @@ const ProductCard = ({ id, name, description, category, imageUrl, featured }: Pr
           {description}
         </p>
         <div className="flex items-center gap-2 text-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
-          <span>View Details</span>
-          <ArrowRight className="w-4 h-4" />
+          <span>{t.products.viewDetails}</span>
+          <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
         </div>
       </div>
 

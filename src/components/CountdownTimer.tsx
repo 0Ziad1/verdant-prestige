@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 interface TimeLeft {
   days: number;
@@ -8,6 +9,8 @@ interface TimeLeft {
 }
 
 const CountdownTimer = () => {
+  const { t } = useLanguage();
+
   // Set launch date to 60 days from now
   const launchDate = new Date();
   launchDate.setDate(launchDate.getDate() + 60);
@@ -38,10 +41,10 @@ const CountdownTimer = () => {
   }, []);
 
   const timeUnits = [
-    { label: 'Days', value: timeLeft.days },
-    { label: 'Hours', value: timeLeft.hours },
-    { label: 'Minutes', value: timeLeft.minutes },
-    { label: 'Seconds', value: timeLeft.seconds },
+    { label: t.countdown.days, value: timeLeft.days },
+    { label: t.countdown.hours, value: timeLeft.hours },
+    { label: t.countdown.minutes, value: timeLeft.minutes },
+    { label: t.countdown.seconds, value: timeLeft.seconds },
   ];
 
   return (
