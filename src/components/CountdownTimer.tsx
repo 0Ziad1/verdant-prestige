@@ -12,8 +12,8 @@ const CountdownTimer = () => {
   const { t } = useLanguage();
 
   // Set launch date to 60 days from now
-  const launchDate = new Date();
-  launchDate.setDate(launchDate.getDate() + 60);
+const launchDate = new Date(2026, 2, 2); //Fabruary 2, 2026
+  // launchDate.setDate(launchDate.getDate() + 60);
 
   const calculateTimeLeft = (): TimeLeft => {
     const difference = launchDate.getTime() - new Date().getTime();

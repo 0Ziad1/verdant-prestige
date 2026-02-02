@@ -34,8 +34,8 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="font-heading text-2xl font-semibold">
-          <span className="text-foreground">LUXE</span>
-          <span className="text-gold">CO</span>
+          <span className="text-foreground">JO</span>
+          <span className="text-gold">VIRA</span>
         </a>
 
         {/* Desktop navigation */}

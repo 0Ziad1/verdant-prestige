@@ -17,8 +17,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="font-heading text-2xl font-semibold">
-            <span className="text-foreground">LUXE</span>
-            <span className="text-gold">CO</span>
+            <span className="text-foreground">JO</span>
+            <span className="text-gold">VIRA</span>
           </div>
 
           {/* Social links */}
@@ -37,7 +37,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2025 LuxeCo. {t.footer.rights}
+            © 2025 JOVIRA. {t.footer.rights}
           </p>
         </div>
       </div>
