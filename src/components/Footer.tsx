@@ -5,10 +5,10 @@ const Footer = () => {
   const { t } = useLanguage();
 
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Instagram, href: 'https://www.instagram.com/jovira_2026/', label: 'Instagram' },
+    // { icon: Twitter, href: '#', label: 'Twitter' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: Facebook, href: 'https://www.facebook.com/share/1BwWGAGBvU/?mibextid=wwXIfr', label: 'Facebook' },
   ];
 
   return (

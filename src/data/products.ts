@@ -13,11 +13,11 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 'heritage-collection',
-    name: 'The Heritage Collection',
+    name: 'Freekeh',
     description: 'Our flagship line of premium products, crafted with generations of expertise and the finest materials available.',
     fullDescription: 'The Heritage Collection represents the pinnacle of our craftsmanship. Each piece is meticulously handcrafted by master artisans who have dedicated their lives to perfecting their craft. Using only the finest materials sourced from around the world, this collection embodies luxury, durability, and timeless elegance.',
     category: 'Signature',
-    imageUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80',
+    imageUrl: '/public/assets/isolated-freekeh-grain-green-small-seeds-covered-husk-white-bac-white-background-photo_655090-636979.jpg',
     featured: true,
     features: [
       'Handcrafted by master artisans',
@@ -39,7 +39,7 @@ export const products: Product[] = [
     description: 'Handcrafted excellence for the discerning customer who appreciates true craftsmanship.',
     fullDescription: 'The Artisan Series celebrates the art of handcrafted excellence. Each piece in this limited edition collection is individually numbered and signed by the artisan who created it. The attention to detail and commitment to quality makes every item a unique work of art.',
     category: 'Limited Edition',
-    imageUrl: 'https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80',
+    imageUrl: '/public/assets/88036c323236c30a97e7e5a02891e5f5.jpg',
     features: [
       'Limited edition pieces',
       'Individually numbered',
