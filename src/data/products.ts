@@ -17,7 +17,7 @@ export const products: Product[] = [
     description: 'Our flagship line of premium products, crafted with generations of expertise and the finest materials available.',
     fullDescription: 'The Heritage Collection represents the pinnacle of our craftsmanship. Each piece is meticulously handcrafted by master artisans who have dedicated their lives to perfecting their craft. Using only the finest materials sourced from around the world, this collection embodies luxury, durability, and timeless elegance.',
     category: 'Signature',
-    imageUrl: '/public/assets/isolated-freekeh-grain-green-small-seeds-covered-husk-white-bac-white-background-photo_655090-636979.jpg',
+    imageUrl: '../assets/isolated-freekeh-grain-green-small-seeds-covered-husk-white-bac-white-background-photo_655090-636979.jpg',
     featured: true,
     features: [
       'Handcrafted by master artisans',
@@ -39,7 +39,7 @@ export const products: Product[] = [
     description: 'Handcrafted excellence for the discerning customer who appreciates true craftsmanship.',
     fullDescription: 'The Artisan Series celebrates the art of handcrafted excellence. Each piece in this limited edition collection is individually numbered and signed by the artisan who created it. The attention to detail and commitment to quality makes every item a unique work of art.',
     category: 'Limited Edition',
-    imageUrl: '/public/assets/88036c323236c30a97e7e5a02891e5f5.jpg',
+    imageUrl: '../assets/88036c323236c30a97e7e5a02891e5f5.jpg',
     features: [
       'Limited edition pieces',
       'Individually numbered',
