@@ -7,8 +7,8 @@ import { useLanguage } from '@/i18n/LanguageContext';
 
 // Map product IDs to translation keys
 const productIdToKey: Record<string, keyof typeof import('@/i18n/translations').translations.en.productData> = {
-  'heritage-collection': 'heritage',
-  'artisan-series': 'artisan',
+  'freekeh': 'Freekeh',
+  'freekehspike': 'FreekehSpike',
   'classic-essentials': 'classic',
   'executive-line': 'executive',
   'the-reserve': 'reserve',
@@ -19,8 +19,16 @@ const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
   const { t, isRTL } = useLanguage();
 
-  const product = products.find(p => p.id === id);
-  const translationKey = id ? productIdToKey[id] : undefined;
+  const normalizedId = id?.toLowerCase();
+
+  const product = products.find(
+    p => p.id.toLowerCase() === normalizedId
+  );
+
+  const translationKey = normalizedId
+    ? productIdToKey[normalizedId]
+    : undefined;
+
   const productTranslations = translationKey ? t.productData[translationKey] : undefined;
 
   if (!product || !productTranslations) {
@@ -39,7 +47,7 @@ const ProductDetails = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       {/* Hero section with product image */}
       <section className="pt-24 pb-12">
         <div className="container mx-auto px-6">
@@ -61,7 +69,7 @@ const ProductDetails = () => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
-              
+
               {/* Category badge */}
               <div className="absolute top-6 left-6">
                 <span className="px-4 py-2 rounded-full bg-gold/20 border border-gold/40 text-gold text-xs uppercase tracking-wider backdrop-blur-sm">
@@ -75,7 +83,7 @@ const ProductDetails = () => {
               <span className="text-gold text-sm uppercase tracking-[0.3em] font-medium">
                 {productTranslations.category}
               </span>
-              
+
               <h1 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mt-4 mb-6">
                 {productTranslations.name}
               </h1>
@@ -113,9 +121,13 @@ const ProductDetails = () => {
                       className="p-4 rounded-xl bg-secondary/50 border border-border"
                     >
                       <span className="text-xs text-muted-foreground uppercase tracking-wider">
-                        {spec.label}
+                        {t.specs[spec.label as keyof typeof t.specs]}
                       </span>
-                      <p className="text-foreground font-medium mt-1">{spec.value}</p>
+
+                      <p className="text-foreground font-medium mt-1">
+                        {t.specs[spec.value as keyof typeof t.specs]}
+                      </p>
+
                     </div>
                   ))}
                 </div>

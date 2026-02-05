@@ -12,11 +12,11 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: 'heritage-collection',
+    id: 'freekeh',
     name: 'Freekeh',
     description: 'Our flagship line of premium products, crafted with generations of expertise and the finest materials available.',
     fullDescription: 'The Heritage Collection represents the pinnacle of our craftsmanship. Each piece is meticulously handcrafted by master artisans who have dedicated their lives to perfecting their craft. Using only the finest materials sourced from around the world, this collection embodies luxury, durability, and timeless elegance.',
-    category: 'Signature',
+    category: 'Our Products',
     imageUrl: '../assets/isolated-freekeh-grain-green-small-seeds-covered-husk-white-bac-white-background-photo_655090-636979.jpg',
     featured: true,
     features: [
@@ -27,18 +27,18 @@ export const products: Product[] = [
       'Certificate of authenticity',
     ],
     specifications: [
-      { label: 'Origin', value: 'Handmade in Italy' },
-      { label: 'Materials', value: 'Premium Grade A' },
-      { label: 'Warranty', value: 'Lifetime' },
-      { label: 'Availability', value: 'Coming Soon' },
+      { label: 'highFibers', value: 'highFibersDetails' },
+      { label: 'weightLoss', value: 'weightLossDetails' },
+      { label: 'diabeticPatients', value: 'diabeticPatientsDetails' },
+      { label: 'muscleBuilding', value: 'muscleBuildingDetails' },
     ],
   },
   {
-    id: 'artisan-series',
-    name: 'Artisan Series',
+    id: 'freekehspike',
+    name: 'FreekehSpike',
     description: 'Handcrafted excellence for the discerning customer who appreciates true craftsmanship.',
     fullDescription: 'The Artisan Series celebrates the art of handcrafted excellence. Each piece in this limited edition collection is individually numbered and signed by the artisan who created it. The attention to detail and commitment to quality makes every item a unique work of art.',
-    category: 'Limited Edition',
+    category: 'Our Organic Materials',
     imageUrl: '../assets/88036c323236c30a97e7e5a02891e5f5.jpg',
     features: [
       'Limited edition pieces',
@@ -48,10 +48,10 @@ export const products: Product[] = [
       'Collector\'s certificate',
     ],
     specifications: [
-      { label: 'Edition', value: 'Limited to 500 pieces' },
-      { label: 'Materials', value: 'Artisan Selected' },
-      { label: 'Warranty', value: '10 Years' },
-      { label: 'Availability', value: 'Coming Soon' },
+      { label: 'energy', value: 'EnergyDetails' },
+      { label: 'carbohydrates', value: 'carbDetails' },
+      { label: 'protein', value: 'proteinDetails' },
+      { label: 'fibers', value: 'fiberDetails' },
     ],
   },
   {
