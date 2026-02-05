@@ -17,7 +17,7 @@ export const products: Product[] = [
     description: 'Our flagship line of premium products, crafted with generations of expertise and the finest materials available.',
     fullDescription: 'The Heritage Collection represents the pinnacle of our craftsmanship. Each piece is meticulously handcrafted by master artisans who have dedicated their lives to perfecting their craft. Using only the finest materials sourced from around the world, this collection embodies luxury, durability, and timeless elegance.',
     category: 'Our Products',
-    imageUrl: '../assets/isolated-freekeh-grain-green-small-seeds-covered-husk-white-bac-white-background-photo_655090-636979.jpg',
+    imageUrl: '../assets/package-jovira.jpeg',
     featured: true,
     features: [
       'Handcrafted by master artisans',
@@ -55,12 +55,12 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 'classic-essentials',
+    id: 'handfreekehspike',
     name: 'Classic Essentials',
     description: 'Timeless designs that form the foundation of any refined collection.',
     fullDescription: 'Classic Essentials represents the core of our philosophy: exceptional quality without compromise. These timeless pieces are designed to be the foundation of any refined collection, offering versatility, durability, and understated elegance that never goes out of style.',
     category: 'Core Range',
-    imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80',
+    imageUrl: '../assets/Create a naturalistic shot with a blur effect, in which you can see a stretch of a cultivated field.jpg',
     features: [
       'Timeless design philosophy',
       'Versatile applications',
@@ -81,7 +81,7 @@ export const products: Product[] = [
     description: 'Premium solutions designed for professionals who demand the very best.',
     fullDescription: 'The Executive Line is designed for professionals who understand that quality is an investment. Each piece combines sophisticated aesthetics with practical functionality, creating tools and accessories that enhance productivity while making a powerful statement.',
     category: 'Professional',
-    imageUrl: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
+    imageUrl: '../assets/Rückruf_ Hartweizen (Freekeh) wegen Pestizidrückstände.jpg',
     features: [
       'Professional-grade quality',
       'Sophisticated aesthetics',
@@ -102,7 +102,7 @@ export const products: Product[] = [
     description: 'Exclusive products available in limited quantities for our most valued patrons.',
     fullDescription: 'The Reserve is our most exclusive offering, available only to our most valued patrons. These extraordinary pieces are produced in extremely limited quantities, ensuring their rarity and collectible value. Each item is a testament to the heights that can be achieved when there are no compromises.',
     category: 'Exclusive',
-    imageUrl: 'https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?w=800&q=80',
+    imageUrl: '../assets/jumbo-package-jovira.jpeg',
     features: [
       'Extremely limited availability',
       'Invitation-only access',
@@ -123,7 +123,7 @@ export const products: Product[] = [
     description: 'Where innovation meets tradition, creating products that define a new era of luxury.',
     fullDescription: 'The Prestige Collection bridges the gap between time-honored craftsmanship and modern innovation. Each piece is designed to meet the exacting standards of today while honoring the traditions that have defined luxury for generations. This collection is for those who appreciate both heritage and progress.',
     category: 'Innovation',
-    imageUrl: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=800&q=80',
+    imageUrl: '../assets/WhatsApp Image 2026-02-01 at 19.33.50 (2).jpeg',
     features: [
       'Cutting-edge design technology',
       'Traditional craftsmanship methods',

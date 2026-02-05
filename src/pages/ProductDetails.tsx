@@ -9,7 +9,7 @@ import { useLanguage } from '@/i18n/LanguageContext';
 const productIdToKey: Record<string, keyof typeof import('@/i18n/translations').translations.en.productData> = {
   'freekeh': 'Freekeh',
   'freekehspike': 'FreekehSpike',
-  'classic-essentials': 'classic',
+  'handfreekehspike': 'HandFreekehSpike',
   'executive-line': 'executive',
   'the-reserve': 'reserve',
   'prestige-collection': 'prestige',

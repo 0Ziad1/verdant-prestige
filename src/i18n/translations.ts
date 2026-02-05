@@ -140,10 +140,10 @@ export const translations = {
           'Magnesium']
       },
 
-      classic: {
-        name: 'Classic Essentials',
+      HandFreekehSpike: {
+        name: 'handFreekehSpike Essentials',
         description: 'Timeless designs that form the foundation of any refined collection.',
-        fullDescription: 'Classic Essentials represents the core of our philosophy: exceptional quality without compromise. These timeless pieces are designed to be the foundation of any refined collection, offering versatility, durability, and understated elegance that never goes out of style.',
+        fullDescription: 'handFreekehSpike Essentials represents the core of our philosophy: exceptional quality without compromise. These timeless pieces are designed to be the foundation of any refined collection, offering versatility, durability, and understated elegance that never goes out of style.',
         category: 'Core Range',
         features: [
           'Timeless design philosophy',
@@ -364,10 +364,10 @@ export const translations = {
           'المغنيسيوم',
         ],
       },
-      classic: {
+      HandFreekehSpike: {
         name: 'الأساسيات الكلاسيكية',
         description: 'تصاميم خالدة تشكل أساس أي مجموعة راقية.',
-        fullDescription: 'تمثل الأساسيات الكلاسيكية جوهر فلسفتنا: جودة استثنائية بدون تنازل. هذه القطع الخالدة مصممة لتكون أساس أي مجموعة راقية، تقدم التنوع والمتانة والأناقة الهادئة التي لا تخرج عن الموضة أبداً.',
+        fullDescription: 'ْتركز شركة جوفيرا علي اشراف مراكز البحوث وسلامة الغذاء والدواء علي مراحل الزراعة من البادرة حتي الحصاد عن طريق استشاريين وخبرات متخصصة',
         category: 'المجموعة الأساسية',
         features: [
           'فلسفة تصميم خالدة',
@@ -380,7 +380,7 @@ export const translations = {
       executive: {
         name: 'الخط التنفيذي',
         description: 'حلول فاخرة مصممة للمحترفين الذين يطلبون الأفضل.',
-        fullDescription: 'الخط التنفيذي مصمم للمحترفين الذين يفهمون أن الجودة استثمار. كل قطعة تجمع بين الجماليات الراقية والوظائف العملية، مما يخلق أدوات وإكسسوارات تعزز الإنتاجية مع إحداث تأثير قوي.',
+        fullDescription: 'تركز شركة جوفيرا علي اختيار التقاوي للزراعة تحت اشراف مراكز البحوث العالمية وسلامة الغذاء والدواء لكي نصل الي اعلي انتاجية وافضل جودة من الفريكة',
         category: 'احترافي',
         features: [
           'جودة احترافية',
