@@ -14,7 +14,7 @@ export const translations = {
       badge: 'Launching Soon',
       title1: 'Company',
       title2: 'Profile',
-      tagline: 'Jovira is an industrial investment project specializing in the production of green wheat with a production capacity of up to 50 tons per day. It is located in the Al-Jawf region, one of the largest and most important wheat-growing areas in the Kingdom of Saudi Arabia. The factory was established in response to the rapid growth in local, regional, and global demand for healthy foods and functional grains with high nutritional value. It was designed according to the latest industry standards to ensure product quality and operational efficiency.',
+      tagline: ' Juvira is an industrial project specializing in the production of green wheat with a capacity of up to 50 tons per day, located in the Al-Jawf region, relying on the latest industrial standards to meet the growing demand for healthy food.',
       cta: 'Get Notified',
     },
     // Countdown
@@ -30,18 +30,18 @@ export const translations = {
       badge: 'Our Story',
       title1: 'Where heritage\n',
       title2: 'meets quality',
-      description: 'We combine the authenticity of traditional products with the latest industrial technologies to offer high-quality freekeh that meets the expectations of local and international markets. The factory remains committed to developing its products, enhancing its operational efficiency, and building strategic partnerships that contribute to solidifying its position as a leading national brand in the healthy grains sector.',
+      description: 'The factory is committed to providing high-quality freekeh by combining heritage authenticity with modern industrial techniques, with a focus on continuous development and building strategic partnerships that enhance its position in the healthy grains sector.',
       vision: {
         title: 'Our Vision',
-        description: 'To redefine luxury by creating products that inspire and endure for generations.',
+        description: 'National leader in healthy grains, trusted for food security, aligned with Vision 2030.',
       },
       mission: {
         title: 'Our Mission',
-        description: 'Delivering uncompromising quality through innovative design and sustainable practices.',
+        description: 'Premium locally-produced freekeh—advanced, sustainable, and of the highest quality.',
       },
       promise: {
         title: 'Our Promise',
-        description: 'Every product we create reflects our commitment to excellence and customer satisfaction.',
+        description: 'Trusted products blending authenticity and technology, with partnerships that build value and trust.',
       },
       stats: {
         experience: 'Years of Experience',
@@ -237,7 +237,7 @@ export const translations = {
       badge: 'قريباً',
       title1: 'نبذة',
       title2: ' عن الشركة',
-      tagline: 'يعد مصنع جوفيرا للفريكة مشروعا صناعيا استثماريا متخصصا في انتاج القمح الاخضر بطاقة انتاجية تصل الي 50 طن يوميا ،ويقع في منطقة الجوف التي تعد من اكبر وأهم مناطق زراعة القمح في المملكة العربية السعودية. جاء تأسيس المصنع استاجبة للنمو المتسارع في الطلب المحلي والاقليمي والعالمي علي الأغذية الصحية والحبوب  الوظيفية ذات القيمة الغذائية العالية ، حيث تم تصميمه وفق أحدث المعايير الصناعية لضمان جودة المنتج وكفاءة العمليات. ',
+      tagline: `مصنع جوفيرا للفريكة هو مشروع صناعي متخصص في إنتاج القمح الأخضر (الفريكة) بطاقة تصل إلى 50 طنًا يوميًا، ويقع في منطقة الجوف، معتمدًا على أحدث المعايير الصناعية لتلبية الطلب المتزايد على الأغذية الصحية.`,
       cta: 'احصل على إشعار',
     },
     // Countdown
@@ -253,18 +253,18 @@ export const translations = {
       badge: 'قصتنا',
       title1: 'حيث يلتقي ',
       title2: 'التراث مع الجودة',
-      description: 'نجمع بين أصالة المنتج التراثي وأحدث التقنيات الصناعية، لتقديم فريكة عالية الجودة تلبي تطلعات الأسواق المحلية والعالمية. ويواصل المصنع التزامه بتطوير منتجاته وتعزيز كفاءته التشغيلية وبناء شراكات استراتيجية تسهم في ترسيخ مكانته كعلامة وطنية رائدة في قطاع الحبوب الصحية ',
+      description: `يلتزم المصنع بتقديم فريكة عالية الجودة من خلال الجمع بين الأصالة التراثية والتقنيات الصناعية الحديثة، مع التركيز على التطوير المستمر وبناء شراكات استراتيجية تعزز مكانته في قطاع الحبوب الصحية.`,
       vision: {
         title: 'رؤيتنا',
-        description: 'إعادة تعريف الفخامة من خلال ابتكار منتجات تُلهم وتدوم لأجيال.',
+        description: 'قيادة وطنية في إنتاج الفريكة والحبوب الصحية، وشريك موثوق للأمن الغذائي محليًا وإقليميًا ودوليًا، متوافق مع رؤية المملكة 2030',
       },
       mission: {
         title: 'مهمتنا',
-        description: 'تقديم جودة لا تُضاهى من خلال التصميم المبتكر والممارسات المستدامة.',
+        description: 'فريكة عالية الجودة بتقنيات متقدمة، مواد خام محلية، ومعايير صارمة للجودة والسلامة، بكفاءة تشغيلية واستدامة بيئية.',
       },
       promise: {
         title: 'وعدنا',
-        description: 'كل منتج نصنعه يعكس التزامنا بالتميز ورضا العملاء.',
+        description: 'منتجات موثوقة تجمع بين الأصالة والتقنية، وشراكات تعزز القيمة والثقة',
       },
       stats: {
         experience: 'سنوات من الخبرة',
