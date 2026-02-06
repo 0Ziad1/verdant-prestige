@@ -52,9 +52,9 @@ export const translations = {
     // Products
     products: {
       badge: 'Our Products',
-      title1: 'Discover',
-      title2: 'Excellence',
-      description: 'Explore our curated collection of premium products, each designed to deliver exceptional quality and unparalleled satisfaction.',
+      title1: 'Competitive ',
+      title2: 'Advantages',
+      description: 'High-quality freekeh produced by integrating agriculture and manufacturing, using local ingredients, advanced technology, strict quality standards, operational efficiency, and environmental sustainability',
       comingSoon: 'Coming Soon',
       viewDetails: 'View Details',
       bottomText: 'All products will be available once we launch. Be the first to know.',
@@ -141,10 +141,10 @@ export const translations = {
       },
 
       HandFreekehSpike: {
-        name: 'handFreekehSpike Essentials',
+        name: 'Agricultural quality',
         description: 'Timeless designs that form the foundation of any refined collection.',
-        fullDescription: 'handFreekehSpike Essentials represents the core of our philosophy: exceptional quality without compromise. These timeless pieces are designed to be the foundation of any refined collection, offering versatility, durability, and understated elegance that never goes out of style.',
-        category: 'Core Range',
+        fullDescription: 'Jovira focuses on the supervision of research centers and food and drug safety authorities throughout the agricultural stages, from seedling to harvest, through consultants and specialized expertise.',
+        category: 'Our agriculture',
         features: [
           'Timeless design philosophy',
           'Versatile applications',
@@ -275,9 +275,9 @@ export const translations = {
     // Products
     products: {
       badge: 'منتجاتنا',
-      title1: 'اكتشف',
-      title2: 'التميز',
-      description: 'استكشف مجموعتنا المنتقاة من المنتجات الفاخرة، كل منها مصمم لتقديم جودة استثنائية ورضا لا مثيل له.',
+      title1: 'المزايا',
+      title2: 'التنافسية',
+      description: 'إنتاج فريكة عالية الجودة من خلال التكامل بين الزراعة والتصنيع، باستخدام مواد خام محلية، وتطبيق أحدث التقنيات، مع الالتزام بمعايير الجودة والسلامة، وتعزيز الكفاءة التشغيلية والاستدامة البيئية.',
       comingSoon: 'قريباً',
       viewDetails: 'عرض التفاصيل',
       bottomText: 'جميع المنتجات ستكون متاحة عند الإطلاق. كن أول من يعلم.',
@@ -365,10 +365,10 @@ export const translations = {
         ],
       },
       HandFreekehSpike: {
-        name: 'الأساسيات الكلاسيكية',
+        name: 'الجودة الزراعية',
         description: 'تصاميم خالدة تشكل أساس أي مجموعة راقية.',
         fullDescription: 'ْتركز شركة جوفيرا علي اشراف مراكز البحوث وسلامة الغذاء والدواء علي مراحل الزراعة من البادرة حتي الحصاد عن طريق استشاريين وخبرات متخصصة',
-        category: 'المجموعة الأساسية',
+        category: 'زراعتنا',
         features: [
           'فلسفة تصميم خالدة',
           'تطبيقات متعددة',

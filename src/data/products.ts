@@ -56,7 +56,7 @@ export const products: Product[] = [
   },
   {
     id: 'handfreekehspike',
-    name: 'Classic Essentials',
+    name: 'Agricultural quality',
     description: 'Timeless designs that form the foundation of any refined collection.',
     fullDescription: 'Classic Essentials represents the core of our philosophy: exceptional quality without compromise. These timeless pieces are designed to be the foundation of any refined collection, offering versatility, durability, and understated elegance that never goes out of style.',
     category: 'Core Range',
