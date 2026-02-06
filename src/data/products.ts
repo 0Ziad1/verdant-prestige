@@ -69,10 +69,10 @@ export const products: Product[] = [
       'Exceptional durability',
     ],
     specifications: [
-      { label: 'Style', value: 'Classic Contemporary' },
-      { label: 'Materials', value: 'Premium Standard' },
-      { label: 'Warranty', value: '5 Years' },
-      { label: 'Availability', value: 'Coming Soon' },
+      { label: 'origin', value: 'originDetails' },
+      { label: 'sustainability', value: 'sustainabilityDetails' },
+      { label: 'examination', value: 'examinationDetails' },
+      { label: 'packaging', value: 'packagingDetails' },
     ],
   },
   {
