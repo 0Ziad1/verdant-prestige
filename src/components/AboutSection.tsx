@@ -31,7 +31,7 @@ const AboutSection = () => {
             {t.about.badge}
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-semibold mt-4 mb-6">
-            {t.about.title1} <span className="text-gradient-gold">{t.about.title2}</span>
+            {t.about.title1}  <br /> <span className="text-gradient-gold">{t.about.title2}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg font-light">
             {t.about.description}

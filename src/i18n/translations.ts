@@ -12,9 +12,9 @@ export const translations = {
     // Hero
     hero: {
       badge: 'Launching Soon',
-      title1: 'Excellence',
-      title2: 'Redefined',
-      tagline: 'A new standard in premium products is coming. Prepare to experience quality and elegance like never before.',
+      title1: 'Company',
+      title2: 'Profile',
+      tagline: 'Jovira is an industrial investment project specializing in the production of green wheat with a production capacity of up to 50 tons per day. It is located in the Al-Jawf region, one of the largest and most important wheat-growing areas in the Kingdom of Saudi Arabia. The factory was established in response to the rapid growth in local, regional, and global demand for healthy foods and functional grains with high nutritional value. It was designed according to the latest industry standards to ensure product quality and operational efficiency.',
       cta: 'Get Notified',
     },
     // Countdown
@@ -28,9 +28,9 @@ export const translations = {
     // About
     about: {
       badge: 'Our Story',
-      title1: 'Crafting',
-      title2: 'Tomorrow',
-      description: 'We are building something extraordinary. A brand that combines timeless elegance with modern innovation, designed for those who appreciate the finer things in life.',
+      title1: 'Where heritage\n',
+      title2: 'meets quality',
+      description: 'We combine the authenticity of traditional products with the latest industrial technologies to offer high-quality freekeh that meets the expectations of local and international markets. The factory remains committed to developing its products, enhancing its operational efficiency, and building strategic partnerships that contribute to solidifying its position as a leading national brand in the healthy grains sector.',
       vision: {
         title: 'Our Vision',
         description: 'To redefine luxury by creating products that inspire and endure for generations.',
@@ -235,9 +235,9 @@ export const translations = {
     // Hero
     hero: {
       badge: 'قريباً',
-      title1: 'التميز',
-      title2: 'يُعاد تعريفه',
-      tagline: 'معيار جديد في المنتجات الفاخرة قادم. استعد لتجربة الجودة والأناقة كما لم تعهدها من قبل.',
+      title1: 'نبذة',
+      title2: ' عن الشركة',
+      tagline: 'يعد مصنع جوفيرا للفريكة مشروعا صناعيا استثماريا متخصصا في انتاج القمح الاخضر بطاقة انتاجية تصل الي 50 طن يوميا ،ويقع في منطقة الجوف التي تعد من اكبر وأهم مناطق زراعة القمح في المملكة العربية السعودية. جاء تأسيس المصنع استاجبة للنمو المتسارع في الطلب المحلي والاقليمي والعالمي علي الأغذية الصحية والحبوب  الوظيفية ذات القيمة الغذائية العالية ، حيث تم تصميمه وفق أحدث المعايير الصناعية لضمان جودة المنتج وكفاءة العمليات. ',
       cta: 'احصل على إشعار',
     },
     // Countdown
@@ -251,9 +251,9 @@ export const translations = {
     // About
     about: {
       badge: 'قصتنا',
-      title1: 'نصنع',
-      title2: 'المستقبل',
-      description: 'نحن نبني شيئاً استثنائياً. علامة تجارية تجمع بين الأناقة الخالدة والابتكار الحديث، مصممة لمن يقدرون الأشياء الراقية في الحياة.',
+      title1: 'حيث يلتقي ',
+      title2: 'التراث مع الجودة',
+      description: 'نجمع بين أصالة المنتج التراثي وأحدث التقنيات الصناعية، لتقديم فريكة عالية الجودة تلبي تطلعات الأسواق المحلية والعالمية. ويواصل المصنع التزامه بتطوير منتجاته وتعزيز كفاءته التشغيلية وبناء شراكات استراتيجية تسهم في ترسيخ مكانته كعلامة وطنية رائدة في قطاع الحبوب الصحية ',
       vision: {
         title: 'رؤيتنا',
         description: 'إعادة تعريف الفخامة من خلال ابتكار منتجات تُلهم وتدوم لأجيال.',
