@@ -14,7 +14,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: t.contact.info.email,
-      details: ['info@luxeco.com', 'support@luxeco.com'],
+      details: ['jovira2026@gmail.com'],
     },
     {
       icon: Clock,
