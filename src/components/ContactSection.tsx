@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
+import emailjs from 'emailjs-com'; // <-- new import
 
 const ContactSection = () => {
   const { t } = useLanguage();
@@ -22,6 +23,26 @@ const ContactSection = () => {
     },
   ];
 
+  // <-- added form submit handler
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_44gv7qs',   // replace with your EmailJS service ID
+        'template_79p2hpb',  // replace with your EmailJS template ID
+        e.target,
+        'iAqJXoOxKTiOoFd2f'       // replace with your EmailJS user/public ID
+      )
+      .then(() => {
+        // alert('Message sent successfully!');
+        e.target.reset();
+      })
+      .catch((error) => {
+        alert('Failed to send message: ' + error.text);
+      });
+  };
+
   return (
     <section id="contact" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
@@ -31,7 +52,8 @@ const ContactSection = () => {
             {t.contact.badge}
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-semibold mt-4 mb-6">
-            {t.contact.title1} <span className="text-gradient-gold">{t.contact.title2}</span>
+            {t.contact.title1}{' '}
+            <span className="text-gradient-gold">{t.contact.title2}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg font-light">
             {t.contact.description}
@@ -53,7 +75,10 @@ const ContactSection = () => {
                   {item.title}
                 </h3>
                 {item.details.map((detail, index) => (
-                  <p key={index} className="text-muted-foreground text-sm font-light">
+                  <p
+                    key={index}
+                    className="text-muted-foreground text-sm font-light"
+                  >
                     {detail}
                   </p>
                 ))}
@@ -66,15 +91,19 @@ const ContactSection = () => {
             <h3 className="font-heading text-2xl font-semibold mb-6 text-foreground">
               {t.contact.form.submit}
             </h3>
-            <form className="space-y-6">
+
+            {/* <-- add onSubmit handler */}
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-sm text-muted-foreground mb-2">
                   {t.contact.form.name}
                 </label>
                 <input
                   type="text"
+                  name="name" // <-- added name attribute
                   className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-gold focus:outline-none transition-colors text-foreground"
                   placeholder={t.contact.form.namePlaceholder}
+                  required
                 />
               </div>
               <div>
@@ -83,8 +112,10 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="email"
+                  name="email" // <-- added name attribute
                   className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-gold focus:outline-none transition-colors text-foreground"
                   placeholder={t.contact.form.emailPlaceholder}
+                  required
                 />
               </div>
               <div>
@@ -93,8 +124,10 @@ const ContactSection = () => {
                 </label>
                 <textarea
                   rows={4}
+                  name="message" // <-- added name attribute
                   className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-gold focus:outline-none transition-colors text-foreground resize-none"
                   placeholder={t.contact.form.messagePlaceholder}
+                  required
                 />
               </div>
               <button
