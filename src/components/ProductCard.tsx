@@ -11,6 +11,7 @@ interface ProductCardProps {
   featured?: boolean;
 }
 
+// Product names and details are NOT translated - they stay in their original language
 const ProductCard = ({ id, name, description, category, imageUrl, featured }: ProductCardProps) => {
   const { t, isRTL } = useLanguage();
 

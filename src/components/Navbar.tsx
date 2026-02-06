@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,9 +19,9 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { label: t.nav.about, href: '#about' },
-    { label: t.nav.products, href: '#products' },
-    { label: t.nav.contact, href: '#contact' },
+    { label: t.nav.about, href: '/#about' },
+    { label: t.nav.products, href: '/#products' },
+    { label: t.nav.contact, href: '/#contact' },
   ];
 
   return (
@@ -41,21 +42,21 @@ const Navbar = () => {
         {/* Desktop navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
+              to={link.href}
               className="text-muted-foreground hover:text-gold transition-colors duration-300 text-sm uppercase tracking-wider"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <LanguageSwitcher />
-          <a
-            href="#contact"
+          <Link
+            to="/#contact"
             className="px-5 py-2.5 gradient-gold text-primary-foreground text-sm font-medium rounded-lg transition-all duration-300 hover:scale-105 shadow-gold"
           >
             {t.nav.getNotified}
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -72,25 +73,25 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-muted-foreground hover:text-gold transition-colors duration-300 text-sm uppercase tracking-wider py-2"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <div className="py-2">
               <LanguageSwitcher />
             </div>
-            <a
-              href="#contact"
+            <Link
+              to="/#contact"
               onClick={() => setIsMobileMenuOpen(false)}
               className="px-5 py-3 gradient-gold text-primary-foreground text-sm font-medium rounded-lg text-center mt-2"
             >
               {t.nav.getNotified}
-            </a>
+            </Link>
           </div>
         </div>
       )}
