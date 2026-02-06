@@ -1,37 +1,17 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Check, Bell } from 'lucide-react';
-import { products } from '@/data/products';
+import { products, getProductById } from '@/data/products';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { useLanguage } from '@/i18n/LanguageContext';
-
-// Map product IDs to translation keys
-const productIdToKey: Record<string, keyof typeof import('@/i18n/translations').translations.en.productData> = {
-  'freekeh': 'Freekeh',
-  'freekehspike': 'FreekehSpike',
-  'handfreekehspike': 'HandFreekehSpike',
-  'executive-line': 'executive',
-  'the-reserve': 'reserve',
-  'prestige-collection': 'prestige',
-};
 
 const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
   const { t, isRTL } = useLanguage();
 
-  const normalizedId = id?.toLowerCase();
+  const product = id ? getProductById(id) : undefined;
 
-  const product = products.find(
-    p => p.id.toLowerCase() === normalizedId
-  );
-
-  const translationKey = normalizedId
-    ? productIdToKey[normalizedId]
-    : undefined;
-
-  const productTranslations = translationKey ? t.productData[translationKey] : undefined;
-
-  if (!product || !productTranslations) {
+  if (!product) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
@@ -65,7 +45,7 @@ const ProductDetails = () => {
             <div className="relative rounded-2xl overflow-hidden aspect-square">
               <img
                 src={product.imageUrl}
-                alt={productTranslations.name}
+                alt={product.name}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
@@ -73,7 +53,7 @@ const ProductDetails = () => {
               {/* Category badge */}
               <div className="absolute top-6 left-6">
                 <span className="px-4 py-2 rounded-full bg-gold/20 border border-gold/40 text-gold text-xs uppercase tracking-wider backdrop-blur-sm">
-                  {productTranslations.category}
+                  {product.category}
                 </span>
               </div>
             </div>
@@ -81,15 +61,15 @@ const ProductDetails = () => {
             {/* Product info */}
             <div className="lg:py-8">
               <span className="text-gold text-sm uppercase tracking-[0.3em] font-medium">
-                {productTranslations.category}
+                {product.category}
               </span>
 
               <h1 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mt-4 mb-6">
-                {productTranslations.name}
+                {product.name}
               </h1>
 
               <p className="text-muted-foreground text-lg font-light leading-relaxed mb-8">
-                {productTranslations.fullDescription}
+                {product.fullDescription}
               </p>
 
               {/* Features */}
@@ -98,7 +78,7 @@ const ProductDetails = () => {
                   {t.productDetails.keyFeatures}
                 </h3>
                 <ul className="space-y-3">
-                  {productTranslations.features.map((feature, index) => (
+                  {product.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <div className="w-5 h-5 rounded-full gradient-gold flex items-center justify-center flex-shrink-0">
                         <Check className="w-3 h-3 text-primary-foreground" />
@@ -164,7 +144,7 @@ const ProductDetails = () => {
             {t.productDetails.comingSoonTitle}
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-            {t.productDetails.comingSoonDesc.replace('{product}', productTranslations.name)}
+            {t.productDetails.comingSoonDesc.replace('{product}', product.name)}
           </p>
           <Link
             to="/#contact"
