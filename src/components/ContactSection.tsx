@@ -29,10 +29,10 @@ const ContactSection = () => {
 
     emailjs
       .sendForm(
-        'service_44gv7qs',   // replace with your EmailJS service ID
-        'template_79p2hpb',  // replace with your EmailJS template ID
+        'service_e0hgaqk',   // replace with your EmailJS service ID
+        'template_uy2v0yn',  // replace with your EmailJS template ID
         e.target,
-        'iAqJXoOxKTiOoFd2f'       // replace with your EmailJS user/public ID
+        'oT02WjPiWOuAC1X-v'       // replace with your EmailJS user/public ID
       )
       .then(() => {
         // alert('Message sent successfully!');

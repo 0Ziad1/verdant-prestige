@@ -81,7 +81,7 @@ export const translations = {
         location: 'Our Location',
         locationValue: 'Coming Soon',
         hours: 'Business Hours',
-        hoursValue: 'Mon - Fri: 9AM - 6PM',
+        hoursValue: 'Sun - Thur : 8AM - 5PM',
       },
     },
     // Footer
