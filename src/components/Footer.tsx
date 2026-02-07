@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Instagram, Twitter, Linkedin, Facebook, Target } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 
 const Footer = () => {
