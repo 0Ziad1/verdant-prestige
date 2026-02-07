@@ -98,10 +98,10 @@ export const products: Product[] = [
   },
   {
     id: 'the-reserve',
-    name: 'The Reserve',
+    name: 'Packages',
     description: '',
     fullDescription: 'The Reserve is our most exclusive offering, available only to our most valued patrons. These extraordinary pieces are produced in extremely limited quantities, ensuring their rarity and collectible value. Each item is a testament to the heights that can be achieved when there are no compromises.',
-    category: 'Exclusive',
+    category: 'Packages',
     imageUrl: '../assets/jumbo-package-jovira.jpeg',
     features: [
       'Extremely limited availability',
@@ -111,18 +111,18 @@ export const products: Product[] = [
       'Exclusive member benefits',
     ],
     specifications: [
-      { label: 'Availability', value: 'By Invitation Only' },
-      { label: 'Materials', value: 'Ultra Premium' },
-      { label: 'Warranty', value: 'Lifetime Plus' },
-      { label: 'Status', value: 'Coming Soon' },
+      { label: 'energy', value: 'EnergyDetails' },
+      { label: 'protein', value: 'proteinDetails' },
+      { label: 'fibers', value: 'fiberDetails' },
+      { label: 'carbohydrates', value: 'carbDetails' },
     ],
   },
   {
     id: 'prestige-collection',
-    name: 'Prestige Collection',
+    name: 'Packages',
     description: '',
     fullDescription: 'The Prestige Collection bridges the gap between time-honored craftsmanship and modern innovation. Each piece is designed to meet the exacting standards of today while honoring the traditions that have defined luxury for generations. This collection is for those who appreciate both heritage and progress.',
-    category: 'Innovation',
+    category: 'Packages',
     imageUrl: '../assets/WhatsApp Image 2026-02-01 at 19.33.50 (2).jpeg',
     features: [
       'Cutting-edge design technology',
@@ -132,10 +132,10 @@ export const products: Product[] = [
       'Future-proof design philosophy',
     ],
     specifications: [
-      { label: 'Design', value: 'Modern Heritage' },
-      { label: 'Materials', value: 'Eco-Premium' },
-      { label: 'Warranty', value: '10 Years' },
-      { label: 'Status', value: 'Coming Soon' },
+      { label: 'energy', value: 'EnergyDetails' },
+      { label: 'protein', value: 'proteinDetails' },
+      { label: 'fibers', value: 'fiberDetails' },
+      { label: 'carbohydrates', value: 'carbDetails' },
     ],
   },
 ];
