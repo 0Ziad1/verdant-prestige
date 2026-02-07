@@ -14,7 +14,7 @@ export const products: Product[] = [
   {
     id: 'freekeh',
     name: 'Freekeh',
-    description: 'Our flagship line of premium products, crafted with generations of expertise and the finest materials available.',
+    description: '',
     fullDescription: 'The Heritage Collection represents the pinnacle of our craftsmanship. Each piece is meticulously handcrafted by master artisans who have dedicated their lives to perfecting their craft. Using only the finest materials sourced from around the world, this collection embodies luxury, durability, and timeless elegance.',
     category: 'Our Products',
     imageUrl: '../assets/package-jovira.jpeg',
@@ -36,7 +36,7 @@ export const products: Product[] = [
   {
     id: 'freekehspike',
     name: 'FreekehSpike',
-    description: 'Handcrafted excellence for the discerning customer who appreciates true craftsmanship.',
+    description: '',
     fullDescription: 'The Artisan Series celebrates the art of handcrafted excellence. Each piece in this limited edition collection is individually numbered and signed by the artisan who created it. The attention to detail and commitment to quality makes every item a unique work of art.',
     category: 'Our Organic Materials',
     imageUrl: '../assets/88036c323236c30a97e7e5a02891e5f5.jpg',
@@ -57,9 +57,9 @@ export const products: Product[] = [
   {
     id: 'handfreekehspike',
     name: 'Agricultural quality',
-    description: 'Timeless designs that form the foundation of any refined collection.',
+    description: '',
     fullDescription: 'Classic Essentials represents the core of our philosophy: exceptional quality without compromise. These timeless pieces are designed to be the foundation of any refined collection, offering versatility, durability, and understated elegance that never goes out of style.',
-    category: 'Core Range',
+    category: 'Our Agriculture',
     imageUrl: '../assets/Create a naturalistic shot with a blur effect, in which you can see a stretch of a cultivated field.jpg',
     features: [
       'Timeless design philosophy',
@@ -77,8 +77,8 @@ export const products: Product[] = [
   },
   {
     id: 'executive-line',
-    name: 'Executive Line',
-    description: 'Premium solutions designed for professionals who demand the very best.',
+    name: 'Grain to Gold',
+    description: '',
     fullDescription: 'The Executive Line is designed for professionals who understand that quality is an investment. Each piece combines sophisticated aesthetics with practical functionality, creating tools and accessories that enhance productivity while making a powerful statement.',
     category: 'Professional',
     imageUrl: '../assets/Rückruf_ Hartweizen (Freekeh) wegen Pestizidrückstände.jpg',
@@ -90,16 +90,16 @@ export const products: Product[] = [
       'Premium customer support',
     ],
     specifications: [
-      { label: 'Grade', value: 'Executive Professional' },
-      { label: 'Materials', value: 'Business Premium' },
-      { label: 'Warranty', value: '7 Years' },
-      { label: 'Availability', value: 'Coming Soon' },
+      { label: 'source', value: 'sourceDetails' },
+      { label: 'treatmentMethod', value: 'treatmentMethodDetails' },
+      { label: 'qualityStandards', value: 'qualityStandardsDetails' },
+      { label: 'production', value: 'productionDetails' },
     ],
   },
   {
     id: 'the-reserve',
     name: 'The Reserve',
-    description: 'Exclusive products available in limited quantities for our most valued patrons.',
+    description: '',
     fullDescription: 'The Reserve is our most exclusive offering, available only to our most valued patrons. These extraordinary pieces are produced in extremely limited quantities, ensuring their rarity and collectible value. Each item is a testament to the heights that can be achieved when there are no compromises.',
     category: 'Exclusive',
     imageUrl: '../assets/jumbo-package-jovira.jpeg',
@@ -120,7 +120,7 @@ export const products: Product[] = [
   {
     id: 'prestige-collection',
     name: 'Prestige Collection',
-    description: 'Where innovation meets tradition, creating products that define a new era of luxury.',
+    description: '',
     fullDescription: 'The Prestige Collection bridges the gap between time-honored craftsmanship and modern innovation. Each piece is designed to meet the exacting standards of today while honoring the traditions that have defined luxury for generations. This collection is for those who appreciate both heritage and progress.',
     category: 'Innovation',
     imageUrl: '../assets/WhatsApp Image 2026-02-01 at 19.33.50 (2).jpeg',
