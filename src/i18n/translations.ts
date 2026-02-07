@@ -81,7 +81,7 @@ export const translations = {
         location: 'Our Location',
         locationValue: 'Coming Soon',
         hours: 'Business Hours',
-        hoursValue: 'Sun - Thur : 8AM - 5PM',
+        hoursValue: 'Sat - Thur : 8AM - 5PM',
       },
     },
     // Footer
@@ -311,7 +311,7 @@ export const translations = {
         location: 'موقعنا',
         locationValue: 'قريباً',
         hours: 'ساعات العمل',
-        hoursValue: 'الإثنين - الجمعة: 9ص - 6م',
+        hoursValue: 'السبت - الخميس : 8ص - 5م',
       },
     },
     // Footer
