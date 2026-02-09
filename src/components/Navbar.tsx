@@ -19,8 +19,8 @@ const Navbar = () => {
 
   const navLinks = [
     { label: t.nav.about, href: '/#about' },
-    { label: t.nav.products, href: '/#products' },
-    { label: t.nav.contact, href: '/#contact' },
+    { label: t.nav.products, href: '/products' },
+    { label: t.nav.contact, href: '/contact' },
   ];
 
   return (
@@ -51,7 +51,7 @@ const Navbar = () => {
           ))}
           <LanguageSwitcher />
           <a
-            href="#contact"
+            href="/contact"
             className="px-5 py-2.5 gradient-gold text-primary-foreground text-sm font-medium rounded-lg transition-all duration-300 hover:scale-105 shadow-gold"
           >
             {t.nav.getNotified}
@@ -85,7 +85,7 @@ const Navbar = () => {
               <LanguageSwitcher />
             </div>
             <a
-              href="#contact"
+              href="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
               className="px-5 py-3 gradient-gold text-primary-foreground text-sm font-medium rounded-lg text-center mt-2"
             >
