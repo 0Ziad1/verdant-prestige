@@ -82,6 +82,8 @@ export const translations = {
         locationValue: 'Coming Soon',
         hours: 'Business Hours',
         hoursValue: 'Sat - Thur : 8AM - 5PM',
+        phone: 'Call Us',
+        phoneValue: '+966 50 123 4567',
       },
     },
     // Footer
@@ -312,6 +314,8 @@ export const translations = {
         locationValue: 'قريباً',
         hours: 'ساعات العمل',
         hoursValue: 'السبت - الخميس : 8ص - 5م',
+        phone: 'للإتصال',
+        phoneValue: '+966 50 123 4567',
       },
     },
     // Footer
