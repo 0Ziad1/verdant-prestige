@@ -1,27 +1,12 @@
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
-import emailjs from 'emailjs-com'; // <-- new import
+import emailjs from 'emailjs-com';
+
+const PHONE_NUMBER = '+966501234567';
+const EMAIL_ADDRESS = 'jovira2026@gmail.com';
 
 const ContactSection = () => {
   const { t } = useLanguage();
-
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: t.contact.info.location,
-      details: [t.contact.info.locationValue],
-    },
-    {
-      icon: Mail,
-      title: t.contact.info.email,
-      details: ['jovira2026@gmail.com'],
-    },
-    {
-      icon: Clock,
-      title: t.contact.info.hours,
-      details: [t.contact.info.hoursValue],
-    },
-  ];
 
   // <-- added form submit handler
   const handleSubmit = (e) => {
@@ -61,29 +46,50 @@ const ContactSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Contact info cards */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {contactInfo.map((item) => (
-              <div
-                key={item.title}
-                className="p-6 rounded-2xl bg-card border border-border hover:border-gold/30 transition-all duration-300"
-              >
-                <div className="w-12 h-12 rounded-xl gradient-gold flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <h3 className="font-heading text-lg font-semibold mb-3 text-foreground">
-                  {item.title}
-                </h3>
-                {item.details.map((detail, index) => (
-                  <p
-                    key={index}
-                    className="text-muted-foreground text-sm font-light"
-                  >
-                    {detail}
-                  </p>
-                ))}
+          {/* Contact info card - styled like reference */}
+          <div className="p-8 rounded-2xl bg-card border border-border flex flex-col items-center text-center gap-8">
+            {/* Phone */}
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-14 h-14 rounded-full gradient-gold flex items-center justify-center">
+                <Phone className="w-7 h-7 text-primary-foreground" />
               </div>
-            ))}
+              <h3 className="text-muted-foreground text-sm font-light">{t.contact.info.phone}</h3>
+              <a
+                href={`tel:${PHONE_NUMBER}`}
+                className="text-foreground text-xl font-bold hover:text-gold transition-colors"
+                dir="ltr"
+              >
+                {t.contact.info.phoneValue}
+              </a>
+            </div>
+
+            {/* Email */}
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-14 h-14 rounded-full gradient-gold flex items-center justify-center">
+                <Mail className="w-7 h-7 text-primary-foreground" />
+              </div>
+              <h3 className="text-muted-foreground text-sm font-light">{t.contact.info.email}</h3>
+              <a
+                href={`mailto:${EMAIL_ADDRESS}`}
+                className="text-foreground text-xl font-bold hover:text-gold transition-colors"
+              >
+                {EMAIL_ADDRESS}
+              </a>
+            </div>
+
+            {/* Location & Hours */}
+            <div className="grid grid-cols-2 gap-6 w-full pt-4 border-t border-border">
+              <div className="flex flex-col items-center gap-1">
+                <MapPin className="w-5 h-5 text-gold mb-1" />
+                <h4 className="text-sm font-semibold text-foreground">{t.contact.info.location}</h4>
+                <p className="text-muted-foreground text-xs">{t.contact.info.locationValue}</p>
+              </div>
+              <div className="flex flex-col items-center gap-1">
+                <Clock className="w-5 h-5 text-gold mb-1" />
+                <h4 className="text-sm font-semibold text-foreground">{t.contact.info.hours}</h4>
+                <p className="text-muted-foreground text-xs">{t.contact.info.hoursValue}</p>
+              </div>
+            </div>
           </div>
 
           {/* Contact form */}
