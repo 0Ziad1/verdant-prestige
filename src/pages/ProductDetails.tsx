@@ -53,7 +53,7 @@ const ProductDetails = () => {
         <div className="container mx-auto px-6">
           {/* Back button */}
           <Link
-            to="/products"
+            to="/#products"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-gold transition-colors mb-8"
           >
             {isRTL ? <ArrowRight className="w-4 h-4" /> : <ArrowLeft className="w-4 h-4" />}
@@ -136,14 +136,14 @@ const ProductDetails = () => {
               {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="/contact"
+                  href="#contact"
                   className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 gradient-gold text-primary-foreground font-medium rounded-lg shadow-gold transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_40px_hsl(43_70%_47%_/_0.3)] gold-shimmer"
                 >
                   <Bell className="w-5 h-5" />
                   {t.productDetails.notifyMe}
                 </a>
                 <Link
-                  to="/contact"
+                  to="/#contact"
                   className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 border border-gold text-gold font-medium rounded-lg transition-all duration-300 hover:bg-gold hover:text-primary-foreground"
                 >
                   {t.productDetails.contactUs}
@@ -167,7 +167,7 @@ const ProductDetails = () => {
             {t.productDetails.comingSoonDesc.replace('{product}', productTranslations.name)}
           </p>
           <Link
-            to="/contact"
+            to="/#contact"
             className="inline-flex items-center gap-2 px-6 py-3 gradient-gold text-primary-foreground font-medium rounded-lg shadow-gold transition-all duration-300 hover:scale-105"
           >
             {t.productDetails.joinWaitlist}
