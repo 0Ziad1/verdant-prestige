@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import emailjs from 'emailjs-com';
 
-const PHONE_NUMBER = '+0201128364839';
+const PHONE_NUMBER = '01128364839';
 const EMAIL_ADDRESS = 'jovira2026@gmail.com';
 
 const ContactSection = () => {
