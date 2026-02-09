@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ContactSection from '@/components/ContactSection';
 import ProductCard from '@/components/ProductCard';
 import { products } from '@/data/products';
 import { useLanguage } from '@/i18n/LanguageContext';
@@ -56,6 +57,7 @@ const Products = () => {
         </div>
       </section>
 
+      <ContactSection />
       <Footer />
     </div>
   );
