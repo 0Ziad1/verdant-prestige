@@ -47,7 +47,7 @@ const HeroSection = () => {
         {/* CTA */}
         <div className="animate-fade-in-delay" style={{ animationDelay: '0.5s' }}>
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 gradient-gold text-primary-foreground font-medium rounded-lg shadow-gold transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_40px_hsl(43_70%_47%_/_0.3)] gold-shimmer"
           >
             {t.hero.cta}
