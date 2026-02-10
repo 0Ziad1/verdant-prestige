@@ -3,7 +3,7 @@ import { useLanguage } from '@/i18n/LanguageContext';
 import emailjs from 'emailjs-com';
 
 const PHONE_NUMBER = '01128364839';
-const EMAIL_ADDRESS = 'jovira2026@gmail.com';
+const EMAIL_ADDRESS = 'info@jovira-saudia.com';
 
 const ContactSection = () => {
   const { t } = useLanguage();
