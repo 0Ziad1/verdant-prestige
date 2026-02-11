@@ -83,7 +83,7 @@ export const translations = {
         hours: 'Business Hours',
         hoursValue: 'Sat - Thur : 8AM - 5PM',
         phone: 'Call Us',
-        phoneValue: '+966 27 954 9049',
+        phoneValue: '+962 795 490 949',
       },
     },
     // Footer
@@ -335,7 +335,7 @@ export const translations = {
         hours: 'ساعات العمل',
         hoursValue: 'السبت - الخميس : 8ص - 5م',
         phone: 'للإتصال',
-        phoneValue: '+966 27 954 9049',
+        phoneValue: '+962 795 490 949',
       },
     },
     // Footer

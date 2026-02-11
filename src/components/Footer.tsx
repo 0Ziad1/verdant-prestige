@@ -6,7 +6,13 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/jovira_2026/', label: 'Instagram' },
-    { icon: MessageCircle, href: 'https://wa.me/201128364839', label: 'WhatsApp' },
+    {
+      icon: MessageCircle,
+      href: "https://wa.me/962795490949",
+      label: "WhatsApp"
+    }
+
+
     { icon: Linkedin, href: 'https://www.linkedin.com/company/jovira-company', label: 'LinkedIn' },
     { icon: Facebook, href: 'https://www.facebook.com/share/1BwWGAGBvU/?mibextid=wwXIfr', label: 'Facebook' },
   ];
