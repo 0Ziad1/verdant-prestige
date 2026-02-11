@@ -79,11 +79,11 @@ export const translations = {
       info: {
         email: 'Email Us',
         location: 'Our Location',
-        locationValue: 'Coming Soon',
+        locationValue: 'WHDA2969, King Abdulaziz Ibn Abdulrahman Saud, 9919, Turaif 74725',
         hours: 'Business Hours',
         hoursValue: 'Sat - Thur : 8AM - 5PM',
         phone: 'Call Us',
-        phoneValue: '+02 01128364839',
+        phoneValue: '+966 27 954 9049',
       },
     },
     // Footer
@@ -331,11 +331,11 @@ export const translations = {
       info: {
         email: 'راسلنا',
         location: 'موقعنا',
-        locationValue: 'قريباً',
+        locationValue: 'الملك عبدالعزيز ابن عبدالرحمن سعود، WHDA2969، 9919، طبرجل 74725',
         hours: 'ساعات العمل',
         hoursValue: 'السبت - الخميس : 8ص - 5م',
         phone: 'للإتصال',
-        phoneValue: '+02 01128364839',
+        phoneValue: '+966 27 954 9049',
       },
     },
     // Footer
