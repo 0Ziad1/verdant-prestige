@@ -10,9 +10,7 @@ const Footer = () => {
       icon: MessageCircle,
       href: "https://wa.me/962795490949",
       label: "WhatsApp"
-    }
-
-
+    },
     { icon: Linkedin, href: 'https://www.linkedin.com/company/jovira-company', label: 'LinkedIn' },
     { icon: Facebook, href: 'https://www.facebook.com/share/1BwWGAGBvU/?mibextid=wwXIfr', label: 'Facebook' },
   ];
