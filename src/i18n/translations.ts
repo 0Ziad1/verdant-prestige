@@ -197,6 +197,26 @@ export const translations = {
         ],
       },
     },
+    // Jovira Story
+    joviraStory: {
+      brandName: 'Jovira',
+      slogan: 'Transforming the World of Freekeh',
+      visionLabel: 'Our Vision',
+      visionText: 'Leading the transformation in the freekeh and grains industry, to become the world\'s foremost reference in quality, production capacity, and innovation.',
+      missionLabel: 'Our Mission',
+      missionText: 'Producing freekeh to international standards through the integration of industrial expertise and cutting-edge technology, while adhering to the highest standards of quality, safety, and sustainability.',
+      whyTitle: 'Why Jovira?',
+      why1: 'The first factory specializing in freekeh in Saudi Arabia',
+      why2: 'A modern industrial approach based on innovation',
+      why3: 'Expansion plans to achieve the largest global production capacity',
+      why4: 'Strict commitment to quality at all production stages',
+      aboutTitle: 'About Jovira',
+      aboutP1: 'Jovira is not just a freekeh factory — it is an industrial vision redefining the grains industry in the region and the world. We chose the name JOVIRA, derived from the concept of transformation and movement, because we believe the freekeh industry deserves a true quantum leap led by quality, technology, and innovation.',
+      aboutP2: 'We are the first factory specializing in freekeh production in the Kingdom of Saudi Arabia, and we aspire to build the largest production capacity in the world, with an absolute commitment to the highest standards of quality, safety, and sustainability.',
+      aboutP3: 'At Jovira, we blend our accumulated expertise with the latest industrial technologies to produce freekeh to international standards — from grain selection through processing and packaging — delivering a product worthy of the trust of our customers locally, regionally, and internationally.',
+      goalLabel: 'Our Goal',
+      goalText: 'To be the world\'s foremost reference in the production of premium freekeh and grains.',
+    },
     // Specifications labels
     specs: {
       highFibers: 'High Fiber',
@@ -425,6 +445,26 @@ export const translations = {
           'صحة العيون:تحتوي علي مضادات اكسدة مثل اللوتين والزياكسانثين',
         ],
       },
+    },
+    // Jovira Story
+    joviraStory: {
+      brandName: 'جوفيرا',
+      slogan: 'صناعة التحول في عالم الفريك',
+      visionLabel: 'رؤيتنا',
+      visionText: 'قيادة التحول في صناعة الفريك والحبوب، لنكون المرجع الأول عالميًا في الجودة والطاقة الإنتاجية والابتكار.',
+      missionLabel: 'رسالتنا',
+      missionText: 'إنتاج فريك بمعايير عالمية عبر التكامل بين الخبرة الصناعية والتكنولوجيا المتطورة، مع الالتزام بأعلى معايير الجودة والسلامة والاستدامة.',
+      whyTitle: 'لماذا جوفيرا؟',
+      why1: 'أول مصنع متخصص في الفريك في السعودية',
+      why2: 'توجه صناعي حديث قائم على الابتكار',
+      why3: 'خطط توسع للوصول لأكبر قدرة إنتاجية عالميًا',
+      why4: 'التزام صارم بالجودة في جميع مراحل الإنتاج',
+      aboutTitle: 'نبذة عن جوفيرا',
+      aboutP1: 'جوفيرًا ليست مجرد مصنع للفريك، بل رؤية صناعية تُعيد تعريف صناعة الحبوب في المنطقة والعالم. اخترنا اسم JOVIRA المستمد من مفهوم التحول والحركة، لأننا نؤمن بأن صناعة الفريك تستحق نقلة نوعية حقيقية تقودها الجودة والتقنية والابتكار.',
+      aboutP2: 'نحن أول مصنع متخصص في إنتاج الفريك في المملكة العربية السعودية، ونسعى إلى بناء أكبر قدرة إنتاجية على مستوى العالم، مع التزام مطلق بأعلى معايير الجودة والسلامة والاستدامة.',
+      aboutP3: 'في جوفيرا، نمزج بين خبراتنا المتراكمة وأحدث التقنيات الصناعية لنصنع فريكًا بمعايير عالمية، من اختيار الحبوب حتى مراحل المعالجة والتعبئة، لنقدّم منتجًا يليق بثقة عملائنا محليًا وإقليميًا ودوليًا.',
+      goalLabel: 'هدفنا',
+      goalText: 'أن نكون المرجع الأول عالميًا في صناعة الفريك والحبوب عالية الجودة.',
     },
     // Specifications labels
     specs: {
