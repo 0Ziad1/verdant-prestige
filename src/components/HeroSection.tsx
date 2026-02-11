@@ -44,6 +44,20 @@ const HeroSection = () => {
           <CountdownTimer />
         </div>
 
+        {/* Brand Statement */}
+        <div className="max-w-3xl mx-auto mb-14 animate-fade-in-delay" style={{ animationDelay: '0.4s' }}>
+          <h3 className="font-heading text-2xl md:text-3xl font-semibold text-gradient-gold mb-6">
+            {t.hero.brandTitle}
+          </h3>
+          <div className="space-y-3 text-muted-foreground text-base md:text-lg font-light leading-relaxed">
+            <p className="border-s-2 border-gold/40 ps-4">{t.hero.brandLine1}</p>
+            <p className="border-s-2 border-gold/40 ps-4">{t.hero.brandLine2}</p>
+          </div>
+          <p className="mt-6 text-lg md:text-xl font-medium text-foreground tracking-wide">
+            {t.hero.brandLine3}
+          </p>
+        </div>
+
         {/* CTA */}
         <div className="animate-fade-in-delay" style={{ animationDelay: '0.5s' }}>
           <a
