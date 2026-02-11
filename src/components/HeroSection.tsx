@@ -58,16 +58,6 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* CTA */}
-        <div className="animate-fade-in-delay" style={{ animationDelay: '0.5s' }}>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-8 py-4 gradient-gold text-primary-foreground font-medium rounded-lg shadow-gold transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_40px_hsl(43_70%_47%_/_0.3)] gold-shimmer"
-          >
-            {t.hero.cta}
-          </a>
-        </div>
-
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
           <div className="w-6 h-10 rounded-full border-2 border-gold/30 flex items-start justify-center p-2">
