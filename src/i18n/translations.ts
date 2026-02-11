@@ -16,10 +16,6 @@ export const translations = {
       title2: 'Profile',
       tagline: ' Jovira is an industrial project specializing in the production of green wheat with a capacity of up to 50 tons per day, located in the Al-Jawf region, relying on the latest industrial standards to meet the growing demand for healthy food.',
       cta: 'Get Notified',
-      brandTitle: 'What Does Jovira Mean?',
-      brandLine1: 'From the Latin root "Virare" — to turn, to change direction, to transform.',
-      brandLine2: 'Jovira stands for movement, energy, dynamism, and transformation.',
-      brandLine3: 'We are the first company in the Kingdom of Saudi Arabia to manufacture green freekeh, and we aspire to be the best in the world.',
     },
     // Countdown
     countdown: {
@@ -252,10 +248,6 @@ export const translations = {
       title2: ' عن الشركة',
       tagline: `مصنع جوفيرا للفريكة هو مشروع صناعي متخصص في إنتاج القمح الأخضر (الفريكة) بطاقة تصل إلى 50 طنًا يوميًا، ويقع في منطقة الجوف، معتمدًا على أحدث المعايير الصناعية لتلبية الطلب المتزايد على الأغذية الصحية.`,
       cta: 'احصل على إشعار',
-      brandTitle: 'ماذا تعني جوفيرا؟',
-      brandLine1: 'من الجذر اللاتيني "Virare" — يدور، يغيّر الاتجاه، ينعطف.',
-      brandLine2: 'جوفيرا تعني الحركة، الطاقة، الديناميكية، والتحوّل.',
-      brandLine3: 'نحن الشركة الأولى في المملكة العربية السعودية لتصنيع الفريك الأخضر، ونطمح لنكون الأفضل في العالم.',
     },
     // Countdown
     countdown: {

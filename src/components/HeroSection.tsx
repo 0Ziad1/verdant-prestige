@@ -44,18 +44,14 @@ const HeroSection = () => {
           <CountdownTimer />
         </div>
 
-        {/* Brand Statement */}
-        <div className="max-w-3xl mx-auto mb-14 animate-fade-in-delay" style={{ animationDelay: '0.4s' }}>
-          <h3 className="font-heading text-2xl md:text-3xl font-semibold text-gradient-gold mb-6">
-            {t.hero.brandTitle}
-          </h3>
-          <div className="space-y-3 text-muted-foreground text-base md:text-lg font-light leading-relaxed">
-            <p className="border-s-2 border-gold/40 ps-4">{t.hero.brandLine1}</p>
-            <p className="border-s-2 border-gold/40 ps-4">{t.hero.brandLine2}</p>
-          </div>
-          <p className="mt-6 text-lg md:text-xl font-medium text-foreground tracking-wide">
-            {t.hero.brandLine3}
-          </p>
+        {/* CTA */}
+        <div className="animate-fade-in-delay" style={{ animationDelay: '0.5s' }}>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 px-8 py-4 gradient-gold text-primary-foreground font-medium rounded-lg shadow-gold transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_40px_hsl(43_70%_47%_/_0.3)] gold-shimmer"
+          >
+            {t.hero.cta}
+          </a>
         </div>
 
         {/* Scroll indicator */}
