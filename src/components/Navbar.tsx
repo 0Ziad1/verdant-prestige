@@ -34,8 +34,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center">
-          <img src={logoImg} alt="JOVIRA" className="h-10 w-auto" />
+        <a href="#" className="flex items-center gap-2">
+          <img src={logoImg} alt="JOVIRA" className="h-14 w-auto" />
+          <span className="font-heading text-2xl font-semibold">
+            <span className="text-foreground">JO</span>
+            <span className="text-gold">VIRA</span>
+          </span>
         </a>
 
         {/* Desktop navigation */}
