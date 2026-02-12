@@ -1,5 +1,6 @@
 import { Instagram, Twitter, Linkedin, Facebook, Target, MessageCircle } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
+import logoImg from '@/assets/logo.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -20,9 +21,8 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="font-heading text-2xl font-semibold">
-            <span className="text-foreground">JO</span>
-            <span className="text-gold">VIRA</span>
+          <div className="flex items-center">
+            <img src={logoImg} alt="JOVIRA" className="h-12 w-auto" />
           </div>
 
           {/* Social links */}

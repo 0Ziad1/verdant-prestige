@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
+import logoImg from '@/assets/logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,9 +34,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="font-heading text-2xl font-semibold">
-          <span className="text-foreground">JO</span>
-          <span className="text-gold">VIRA</span>
+        <a href="#" className="flex items-center">
+          <img src={logoImg} alt="JOVIRA" className="h-10 w-auto" />
         </a>
 
         {/* Desktop navigation */}
